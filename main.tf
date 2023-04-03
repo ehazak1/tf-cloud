@@ -26,3 +26,12 @@ resource "aws_vpc" "playgroud-vpc" {
         Name = "playground-vpc"
     }
 }
+
+resource "aws_instance" "playground-vm" {
+  ami = "ami-007855ac798b5175e"
+  instance_type = "t2.micro"
+
+  tags = {
+    "name" = "playground-vm"
+  }
+}

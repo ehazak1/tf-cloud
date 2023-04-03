@@ -29,7 +29,7 @@ resource "aws_vpc" "playgroud-vpc" {
 
 resource "aws_subnet" "subnet-1" {
   vpc_id = aws_vpc.playgroud-vpc.id
-  cidr_block = "10.10.0.0/24"
+  cidr_block = "10.0.10.0/24"
 
   tags = {
     name = "subnet-1"

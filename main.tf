@@ -32,15 +32,15 @@ resource "aws_subnet" "subnet-1" {
   cidr_block = "10.0.10.0/24"
 
   tags = {
-    name = "subnet-1"
+    Name = "subnet-1"
   }
 }
-/*
+
 resource "aws_instance" "playground-vm" {
   ami = "ami-007855ac798b5175e"
   instance_type = "t2.micro"
 
   tags = {
-    "name" = "playground-vm"
+     Name = "playground-vm"
   }
-}*/
+}

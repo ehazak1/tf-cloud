@@ -19,7 +19,7 @@ terraform {
 provider "aws" {
   region = "us-east-1"
 }
-/*
+
 resource "aws_vpc" "playgroud-vpc" {
     cidr_block = "10.0.0.0/16"
     tags = {
@@ -41,4 +41,3 @@ resource "aws_instance" "playground-vm" {
   instance_type = "t2.micro"
   subnet_id = aws_subnet.subnet-1.id
 }
-*/

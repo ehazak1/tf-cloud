@@ -26,7 +26,7 @@ resource "aws_vpc" "playgroud-vpc" {
         Name = "playground-vpc"
     }
 }
-
+/*
 resource "aws_subnet" "subnet-1" {
   vpc_id = aws_vpc.playgroud-vpc.id
   cidr_block = "10.0.10.0/24"
@@ -41,3 +41,4 @@ resource "aws_instance" "playground-vm" {
   instance_type = "t2.micro"
   subnet_id = aws_subnet.subnet-1.id
 }
+*/
